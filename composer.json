@@ -1,0 +1,40 @@
+{
+  "name": "godzie44/yii2-thumbs-up",
+  "description": "Thumbs up rating module for Yii 2",
+  "keywords": [
+    "yii",
+    "thumbs-up",
+    "widget",
+    "module"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "support": {
+    "issues": "https://github.com/godzie44/yii2-thumbs-up/issues",
+    "source": "https://github.com/godzie44/yii2-thumbs-up"
+  },
+  "authors": [
+    {
+      "name": "Derevtsov Konstantin",
+      "email": "godzie@yandex.ru",
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+
+    "yiisoft/yii2": "2.0.*",
+  
+  },
+  "autoload": {
+    "psr-4": {
+      "godzie44\\yii\\module\\thumbsup\\": ""
+    }
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}
