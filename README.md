@@ -42,8 +42,7 @@ $authManager->add($thumbsUpChange);
 
 Updating database schema
 ------------------------
-After you downloaded and configured `rmrevin/yii2-comments`,
-the last thing you need to do is updating your database schema by applying the migrations:
+After you downloaded and configured, updating your database schema by applying the migrations:
 
 In `command line`:
 ```
