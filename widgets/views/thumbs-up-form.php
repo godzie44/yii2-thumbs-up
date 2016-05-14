@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 use \yii\widgets\ActiveForm;
 use yii\helpers\Html;
@@ -31,3 +32,38 @@ echo $form->field($ThumbsUpForm, 'value')->radioList([$ThumbsUpForm->upValue => 
 ActiveForm::end();
 
 
+=======
+<?php
+use \yii\widgets\ActiveForm;
+use yii\helpers\Html;
+
+
+$form = \yii\widgets\ActiveForm::begin(['id' => 'thumbsUpForm']);
+
+echo Html::activeHiddenInput($ThumbsUpForm, 'id');
+
+/**@var $ThumbsUpForm \app\modules\yiithumbsup\forms\ThumbsUpForm */
+
+echo $form->field($ThumbsUpForm, 'value')->radioList([$ThumbsUpForm->upValue => $ThumbsUpForm->thumbsUpCount, $ThumbsUpForm->downValue => $ThumbsUpForm->thumbsDownCount],
+    [
+        'item' => function ($index, $label, $name, $checked, $value) use ($ThumbsUpForm) {
+            $return = Html::checkbox($name, $checked, [
+                    'class' => 'thumbsControl',
+                    'disabled' => $ThumbsUpForm->isModifyDisabled,
+                    'value' => $value,
+                    'label' =>
+                        "<span class='thumb'>" .
+                        ($value === $ThumbsUpForm->upValue ? '<i class="fa fa-thumbs-up" ></i>' : '<i class="fa fa-thumbs-down" ></i>') .
+                        '</span>' .
+                        "<span class='thumbsCount'>$label</span>"
+                ]
+            );
+            return $return;
+        },
+    ]
+)->label(false);;
+
+ActiveForm::end();
+
+
+>>>>>>> 4eb156c4e71ee4fba18e827d1a2045472e58c3f7
