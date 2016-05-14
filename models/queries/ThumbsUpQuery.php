@@ -23,7 +23,7 @@ class ThumbsUpQuery extends \yii\db\ActiveQuery
     }
 
     /**
-     * @param string|array $entity
+     * @param string $entity
      * @return static
      */
     public function byEntity($entity)

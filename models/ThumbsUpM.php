@@ -76,15 +76,7 @@ class ThumbsUpM extends \yii\db\ActiveRecord
             [get_called_class()]
         );
     }
-
-    /**
-     * @return bool
-     */
-    public function isEdited()
-    {
-        return $this->created_at !== $this->updated_at;
-    }
-
+    
     /**
      * @return bool
      */
