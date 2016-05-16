@@ -67,9 +67,8 @@ Parameters
 
 ### Module parameters
 * **useRbac** (optional, boolean) Default TRUE. Defines if the rating system will use Rbac validation to check permissions when trying to rate some entity.
-<<<<<<< HEAD
+
 
 ###Widget parameters
 * **tooltip** (optional, array) Define this array to use custom tooltip labels.
-=======
->>>>>>> 022a600874a6b0a5709e843fa581e79ee66ef1eb
+
