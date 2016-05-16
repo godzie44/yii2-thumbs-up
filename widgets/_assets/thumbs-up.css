@@ -1,0 +1,27 @@
+.thumbsControl:checked + span{
+    color: #83BF17;
+}
+
+.thumbsControl:checked + span:hover{
+    opacity: 0.85;
+}
+
+.thumb{
+    cursor: pointer;
+    font-size: 20px;
+    color: #808080;
+    margin-right: 4px;
+    margin-left: 10px;
+}
+
+.thumb:hover{
+    opacity: 0.85;
+}
+
+.thumbsControl{
+    display: none;
+}
+
+.thumb span{
+    display: none;
+}
