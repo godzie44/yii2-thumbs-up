@@ -61,6 +61,7 @@ class ThumbsUpWidget extends \yii\base\Widget
     {
         $this->registerAssets();
 
+
         if (empty($this->tooltip)) {
             $this->setDefaultTooltips();
         }
@@ -70,7 +71,7 @@ class ThumbsUpWidget extends \yii\base\Widget
         if (($thumbsUp = $thumbsUpModel::find()->byEntity($this->entity)->currentUser()->one()) === null) {
             $thumbsUp = $thumbsUpModel;
         }
-	
+
         $thumbsUpFormClassData = thumbsup\Module::instance()->model(
             'thumbsUpForm', [
                 'thumbsUp' => $thumbsUp,
@@ -78,7 +79,7 @@ class ThumbsUpWidget extends \yii\base\Widget
             ]
         );
 
-        /**@var $thumbsUpForm  thumbsup\forms\ThumbsUpForm         */
+        /**@var $thumbsUpForm  thumbsup\forms\ThumbsUpForm */
         $thumbsUpForm = \Yii::createObject($thumbsUpFormClassData);
 
         if (\Yii::$app->request->isAjax) {
@@ -89,7 +90,7 @@ class ThumbsUpWidget extends \yii\base\Widget
                 }
             }
         }
-		
+
         return $this->render($this->viewFile, [
             'ThumbsUpForm' => $thumbsUpForm,
             'tooltips' => $this->tooltip
