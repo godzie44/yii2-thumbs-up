@@ -1,5 +1,5 @@
 # yii2-thumbs-up
-Thumbs up rating yii2 module
+Thumbs up rating yii2 module (used ajax).
 
 Installation
 ------------
@@ -51,6 +51,22 @@ php yii migrate/up --migrationPath=@vendor/godzie44/yii2-thumbs-up/migrations/
 
 Usage
 -----
+In controller
+```php
+
+public function actions()
+    {
+        return [
+            'thumb-rate' => [
+                'class' => 'godzie44\yii\module\thumbsup\ThumbRateAction'
+            ],
+
+            /* other actions */
+        ];
+    }
+```
+
+
 In view
 ```php
 <?php
@@ -58,7 +74,7 @@ In view
 
 use godzie44\yii\module\thumbsup;
 
-echo thumbsup\widgets\ThumbsUpWidget::widget(['entity' => "entity-44"])
+echo thumbsup\widgets\ThumbsUpWidget::widget(['entity' => "entity-44"]);
 
 ```
 
@@ -70,5 +86,6 @@ Parameters
 
 
 ###Widget parameters
+* **entity** (required, string) The identify of rating.
 * **tooltip** (optional, array) Define this array to use custom tooltip labels.
 
