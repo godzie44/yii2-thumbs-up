@@ -3,10 +3,14 @@ use \yii\widgets\ActiveForm;
 use yii\helpers\Html;
 
 
-$form = \yii\widgets\ActiveForm::begin(['id' => 'thumbsUpForm']);
+$form = \yii\widgets\ActiveForm::begin([
+    'id' => 'thumbsUpForm',
+    'action' => \yii\helpers\Url::to(['thumb-rate'])
+
+]);
 
 echo Html::activeHiddenInput($ThumbsUpForm, 'id');
-
+echo Html::activeHiddenInput($ThumbsUpForm, 'entity');
 /**@var $ThumbsUpForm godzie44\yii\module\thumbsup\forms\ThumbsUpForm */
 
 echo $form->field($ThumbsUpForm, 'value')->radioList([$ThumbsUpForm->upValue => $ThumbsUpForm->thumbsUpCount, $ThumbsUpForm->downValue => $ThumbsUpForm->thumbsDownCount],

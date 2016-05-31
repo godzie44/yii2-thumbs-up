@@ -25,7 +25,7 @@
             });
 
             $.post({
-                url: '',
+                url: $('#thumbsUpForm').attr('action'),
                 data: $('#thumbsUpForm').serialize()
             });
 

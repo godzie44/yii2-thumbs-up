@@ -9,6 +9,6 @@ namespace app\modules\yiithumbsup;
 class Permission
 {
 
-    const CHANGE = 'thumbsup.change';
+    const CHANGE = 'thumb-rate';
 
 }
