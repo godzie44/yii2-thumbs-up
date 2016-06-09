@@ -1,5 +1,6 @@
 <?php
 
+
 namespace godzie44\yii\module\thumbsup\widgets;
 
 use yii\web\AssetBundle;

@@ -41,10 +41,10 @@ class ThumbsUpWidget extends \yii\base\Widget
     protected function setDefaultTooltips()
     {
         $this->tooltip = [
-            'beforeUp' => \Yii::t('app', 'Like it'),
+            'beforeUp'   => \Yii::t('app', 'Like it'),
             'beforeDown' => \Yii::t('app', 'Dislike it'),
-            'unUp' => \Yii::t('app', 'Unlike it'),
-            'unDown' => \Yii::t('app', 'Neutral now')
+            'unUp'       => \Yii::t('app', 'Unlike it'),
+            'unDown'     => \Yii::t('app', 'Neutral now')
         ];
     }
 
@@ -68,7 +68,7 @@ class ThumbsUpWidget extends \yii\base\Widget
         $thumbsUpFormClassData = thumbsup\Module::instance()->model(
             'thumbsUpForm', [
                 'thumbsUp' => $thumbsUp,
-                'entity' => $this->entity,
+                'entity'   => $this->entity,
             ]
         );
 
@@ -77,7 +77,7 @@ class ThumbsUpWidget extends \yii\base\Widget
 
         return $this->render($this->viewFile, [
             'ThumbsUpForm' => $thumbsUpForm,
-            'tooltips' => $this->tooltip
+            'tooltips'     => $this->tooltip
         ]);
     }
 
