@@ -5,7 +5,8 @@ namespace godzie44\yii\module\thumbsup\widgets;
 use godzie44\yii\module\thumbsup;
 
 /**
- * Class CommentFormWidget
+ * Class ThumbsUpWidget
+ * @package godzie44\yii\module\thumbsup\widgets
  */
 class ThumbsUpWidget extends \yii\base\Widget
 {
