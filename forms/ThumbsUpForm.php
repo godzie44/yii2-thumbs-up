@@ -6,8 +6,8 @@ namespace godzie44\yii\module\thumbsup\forms;
 use godzie44\yii\module\thumbsup;
 
 /**
- * Class CommentCreateForm
- * @package rmrevin\yii\module\Comments\forms
+ * Class ThumbsUpForm
+ * @package godzie44\yii\module\thumbsup\forms
  */
 class ThumbsUpForm extends \yii\base\Model
 {

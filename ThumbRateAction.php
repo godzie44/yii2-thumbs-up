@@ -8,6 +8,10 @@ use godzie44\yii\module\thumbsup;
 use yii\base\Action;
 use yii\base\ErrorException;
 
+/**
+ * Class ThumbRateAction
+ * @package godzie44\yii\module\thumbsup
+ */
 class ThumbRateAction extends Action {
     public function run(){
 

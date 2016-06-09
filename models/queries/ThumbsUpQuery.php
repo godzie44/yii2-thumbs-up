@@ -4,10 +4,10 @@
  namespace godzie44\yii\module\thumbsup\models\queries;
 
 
-
-/**
- * Class CommentQuery
- */
+ /**
+  * Class ThumbsUpQuery
+  * @package godzie44\yii\module\thumbsup\models\queries
+  */
 class ThumbsUpQuery extends \yii\db\ActiveQuery
 {
 
